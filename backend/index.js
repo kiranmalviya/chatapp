@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors : {
-        origin : "https://react-chatapp-dew9.onrender.com",
+        origin : "http://localhost:3000",
         methods : ["GET", "POST"]
     },
 });
