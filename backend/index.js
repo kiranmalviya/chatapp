@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors : {
-        origin : "https://kiran-chatbox.netlify.app/",
+        origin : "https://react-chatapp-dew9.onrender.com",
         methods : ["GET", "POST"]
     },
 });
@@ -28,4 +28,4 @@ io.on("connection",(socket)=> {
     socket.on("disconnect",()=> console.log("user is disconnected"));
 })
 
-server.listen("https://kiran-chatbox.netlify.app/");
+server.listen("https://react-chatapp-dew9.onrender.com");
