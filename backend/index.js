@@ -28,4 +28,4 @@ io.on("connection",(socket)=> {
     socket.on("disconnect",()=> console.log("user is disconnected"));
 })
 
-server.listen("https://react-chatapp-dew9.onrender.com");
+server.listen(5000,()=> console.log("server running at port 5000"));
